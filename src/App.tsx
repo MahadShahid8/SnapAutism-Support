@@ -2,6 +2,8 @@ import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import { toast, Toaster } from 'react-hot-toast';
 import { Send, Mail, Clock, MessageSquare } from 'lucide-react';
+import logoImage from './logo-playstore.png';  // Add this at the top with other imports
+
 
 // Type definitions for environment variables
 declare global {
@@ -54,7 +56,7 @@ function App() {
       <header className="container mx-auto px-4 py-12">
         <div className="max-w-4xl mx-auto text-center">
           <img 
-            src="/logo-playstore.png" 
+            src={logoImage} 
             alt="SnapAutism Logo" 
             className="w-48 h-48 mx-auto mb-6"
           />
